@@ -82,15 +82,17 @@
 
       .header-logo {
         max-width: 150px; /* Decrease the logo size for mobile devices */
+        float: none; /* Remove the float on mobile devices */
+        margin: 0 auto; /* Center the logo horizontally */
       }
 
       .contact-info {
-        position: static; /* Remove the absolute positioning */
-        margin-top: 20px; /* Increase the margin-top for mobile devices */
+        margin-top: 10px; /* Reset the margin-top for mobile devices */
       }
 
       .contact-button {
-        display: inline; /* Change the display to inline for mobile devices */
+        display: block; /* Change the display to block for mobile devices */
+        margin-top: 10px; /* Add margin-top to create space between the contact info and button */
       }
     }
   </style>
@@ -127,4 +129,3 @@
   </footer>
 </body>
 </html>
-
