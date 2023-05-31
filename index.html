@@ -13,6 +13,7 @@
       padding: 30px 20px; /* Increase the padding to increase the black area */
       margin-bottom: 20px; /* Increase the margin-bottom to extend the black area down the page */
       text-align: center; /* Center the content */
+      position: relative; /* Add relative positioning to the header */
     }
 
     .contact-info {
@@ -50,6 +51,19 @@
     .header-image {
       width: 100%;
       height: auto;
+    }
+
+    .header-social-icons {
+      position: absolute;
+      top: 50%; /* Position the icons vertically centered */
+      right: 20px; /* Adjust the distance from the right side */
+      transform: translateY(-50%); /* Center the icons vertically */
+    }
+
+    .header-social-icons a {
+      color: white;
+      font-size: 20px;
+      margin-left: 10px; /* Add space between the icons */
     }
 
     footer {
@@ -94,6 +108,17 @@
         display: block; /* Change the display to block for mobile devices */
         margin-top: 10px; /* Add margin-top to create space between the contact info and button */
       }
+
+      .header-social-icons {
+        position: static; /* Remove the absolute positioning */
+        margin-top: 20px; /* Increase the margin-top for mobile devices */
+      }
+
+      .header-social-icons a {
+        display: block; /* Change the display to block for mobile devices */
+        margin: 10px 0; /* Add margin between the icons on mobile devices */
+        text-align: center; /* Center the icons horizontally */
+      }
     }
   </style>
 </head>
@@ -105,6 +130,10 @@
       <div class="contact-info">
         We have agents that speak English and Spanish at +1 954 2634450<br>
         <a href="mailto:joswell.v@gmail.com" class="contact-button">Contact</a>
+      </div>
+      <div class="header-social-icons">
+        <a href="https://www.facebook.com/your-facebook-page" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com/your-instagram-page" target="_blank"><i class="fab fa-instagram"></i></a>
       </div>
       <h2 class="agency-title">AN AGENCY YOU CAN TRUST</h2>
     </div>
