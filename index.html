@@ -10,24 +10,45 @@
     header {
       background-color: black;
       color: white;
+      position: relative;
+      text-align: center;
+      padding: 20px;
     }
 
-    footer {
-      background-color: black;
-      color: white;
+    .contact-info {
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: 10px;
+      font-weight: bold;
+    }
+
+    .agency-title {
+      font-size: 32px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .agency-description {
+      font-size: 18px;
+      line-height: 1.5;
+    }
+
+    .header-image {
+      max-width: 100%;
+      height: auto;
     }
   </style>
 </head>
 <body>
   <header>
     <div class="container">
+      <img src="path/to/your/main-image.jpg" alt="Atlantica Insurance" class="header-image">
       <h1>Atlantica Insurance</h1>
-      <nav>
-        <a href="#">Home</a>
-        <a href="#">About Us</a>
-        <a href="#">Services</a>
-        <a href="#">Contact Us</a>
-      </nav>
+      <div class="contact-info">
+        We have agents that speak English and Spanish at +1 954 2634450
+      </div>
+      <h2 class="agency-title">AN AGENCY YOU CAN TRUST</h2>
     </div>
   </header>
   <main>
@@ -36,17 +57,15 @@
       <p>At Atlantica Insurance, we understand that your insurance needs are unique. That's why we offer a wide range of policies to fit your individual needs. Whether you're looking for home insurance, auto insurance, or business insurance, we have the coverage you need to protect your assets.</p>
       <p>We also offer a variety of discounts to help you save money on your insurance premiums. So if you're looking for a reliable and affordable insurance company, look no further than Atlantica Insurance.</p>
       <a href="#">Get a Quote</a>
+      <div class="agency-description">
+        <p>Our insurance agency is here to help you and your business. From requesting a quote on your car, business, or home to a custom package that fits all of your needs, we're your one-stop shop for all things Insurance-related. We are dedicated to providing customers with the utmost service, response, and information excellence. We value our clients' concerns and situations, so we are always committed to advising you with the best financial and objective analysis to serve your individual needs.</p>
+      </div>
     </div>
   </main>
   <footer>
     <div class="container">
-      <p>&copy; 2023 Atlantica Insurance</p>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Contact Us</a></li>
-      </ul>
+      <p class="footer-text">&copy; 2023 Atlantica Insurance</p>
+      <p class="footer-text">We have agents that speak English and Spanish at +1 954 2634450</p>
     </div>
   </footer>
 </body>
