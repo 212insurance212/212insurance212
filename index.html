@@ -10,26 +10,23 @@
     header {
       background-color: black;
       color: white;
-      position: relative;
-      text-align: center;
-      padding: 20px;
+      padding: 30px 20px; /* Increase the padding to increase the black area */
+      margin-bottom: 20px; /* Increase the margin-bottom to extend the black area down the page */
+      text-align: center; /* Center the content */
     }
 
     .contact-info {
-      position: absolute;
-      top: 0;
-      right: 0;
-      padding: 10px;
+      margin-top: 10px; /* Add margin-top to create space between contact info and logo */
       font-weight: bold;
     }
 
     .contact-button {
       background-color: white;
       color: black;
-      padding: 10px 20px;
+      padding: 8px 16px; /* Decrease the padding to decrease the button width */
       font-weight: bold;
       text-decoration: none;
-      display: block;
+      display: inline-block;
       margin-top: 10px;
     }
 
@@ -47,8 +44,8 @@
     .header-logo {
       max-width: 200px; /* Adjust the width as needed */
       height: auto;
-      float: left;
-      margin-right: 10px;
+      margin: 0 auto; /* Center the logo horizontally */
+      display: block; /* Remove float and margin-right */
     }
 
     .header-image {
@@ -74,6 +71,29 @@
       font-weight: bold;
       text-decoration: none;
     }
+
+    /* Responsive Styles */
+
+    @media screen and (max-width: 600px) {
+      /* Adjust styles for mobile devices */
+
+      header {
+        padding: 20px; /* Decrease the padding for mobile devices */
+      }
+
+      .header-logo {
+        max-width: 150px; /* Decrease the logo size for mobile devices */
+      }
+
+      .contact-info {
+        position: static; /* Remove the absolute positioning */
+        margin-top: 20px; /* Increase the margin-top for mobile devices */
+      }
+
+      .contact-button {
+        display: inline; /* Change the display to inline for mobile devices */
+      }
+    }
   </style>
 </head>
 <body>
@@ -85,20 +105,28 @@
         We have agents that speak English and Spanish at +1 954 2634450<br>
         <a href="mailto:joswell.v@gmail.com" class="contact-button">Contact</a>
       </div>
-      <h2 class="agency-title">AN AGENCY YOU CAN TRUST</h2>
-    </div>
+      <h2 class="agency-title
+"AN AGENCY YOU CAN TRUST</h2>
+</div>
+
   </header>
   <main>
     <div class="container">
       <img src="path/to/your/main-image.jpg" alt="Main Image" class="header-image">
       <h2>We're here to help you protect your assets</h2>
-      <p>At Nation Insurance, we understand that your insurance needs are unique. That's why we offer a wide range of policies to fit your individual needs. Whether you're looking for home insurance, auto insurance, or business insurance, we have the coverage you need to protect your assets
-  
-
-<footer>
+      <p>At Nation Insurance, we understand that your insurance needs are unique. That's why we offer a wide range of policies to fit your individual needs. Whether you're looking for home insurance, auto insurance, or business insurance, we have the coverage you need to protect your assets.</p>
+      <p>We also offer a variety of discounts to help you save money on your insurance premiums. So if you're looking for a reliable and affordable insurance company, look no further than Nation Insurance.</p>
+      <a href="mailto:your-email@example.com" class="get-quote-button">Get a Quote</a>
+      <div class="agency-description">
+        <p>Our insurance agency is here to help you and your business.</p>
+      </div>
+    </div>
+  </main>
+  <footer>
     <div class="container">
       <p class="footer-text">&copy; 2023 Atlantica Insurance</p>
       <p class="footer-text">We have agents that speak English and Spanish at +1 954 2634450</p>
     </div>
   </footer>
 </body>
+</html>
