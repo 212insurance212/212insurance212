@@ -1,124 +1,111 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Nation Insurance</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.2/css/all.min.css">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <style>
+    /* Reset some default styles */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Add custom styles */
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
     header {
-      background-color: black;
-      color: white;
-      padding: 30px 20px; /* Increase the padding to increase the black area */
-      margin-bottom: 20px; /* Increase the margin-bottom to extend the black area down the page */
-      text-align: center; /* Center the content */
-      position: relative; /* Add relative positioning to the header */
-    }
-
-    .contact-info {
-      margin-top: 10px; /* Add margin-top to create space between contact info and logo */
-      font-weight: bold;
-    }
-
-    .contact-button {
-      background-color: white;
-      color: black;
-      padding: 8px 16px; /* Decrease the padding to decrease the button width */
-      font-weight: bold;
-      text-decoration: none;
-      display: inline-block;
-      margin-top: 10px;
-    }
-
-    .agency-title {
-      font-size: 32px;
-      font-weight: bold;
-      margin-bottom: 20px;
-    }
-
-    .agency-description {
-      font-size: 18px;
-      line-height: 1.5;
-    }
-
-    .header-logo {
-      max-width: 200px; /* Adjust the width as needed */
-      height: auto;
-      float: left; /* Move the logo to the left */
-    }
-
-    .header-image {
-      width: 100%;
-      height: auto;
-    }
-
-    .header-social-icons {
-      position: absolute;
-      top: 50%; /* Position the icons vertically centered */
-      right: 20px; /* Adjust the distance from the right side */
-      transform: translateY(-50%); /* Center the icons vertically */
-    }
-
-    .header-social-icons a {
-      color: white;
-      font-size: 20px;
-      margin-left: 10px; /* Add space between the icons */
-    }
-
-    footer {
-      background-color: black;
-      color: white;
+      background-color: black; /* Updated background color */
       padding: 20px;
       text-align: center;
     }
 
-    .footer-text {
-      margin: 5px 0;
+    .header-logo {
+      max-width: 200px;
+      margin-right: auto; /* Updated margin property */
+      margin-left: 0; /* Updated margin property */
     }
 
-    .get-quote-button {
-      background-color: black;
-      color: white;
+    h1 {
+      margin-top: 20px;
+      font-size: 24px;
+    }
+
+    .contact-info {
+      margin-top: 20px;
+      font-size: 16px;
+    }
+
+    .contact-button {
+      display: inline-block;
       padding: 10px 20px;
-      font-weight: bold;
+      margin-top: 10px;
+      background-color: #555;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    .agency-title {
+      margin-top: 40px;
+      font-size: 32px;
+    }
+
+    .header-social-icons {
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    .header-social-icons a {
+      display: inline-block;
+      margin: 10px;
+      color: #555;
+      font-size: 24px;
       text-decoration: none;
     }
 
-    /* Responsive Styles */
+    .header-image {
+      max-width: 100%;
+      height: auto;
+      margin-top: 20px;
+    }
 
-    @media screen and (max-width: 600px) {
-      /* Adjust styles for mobile devices */
+    main {
+      padding: 20px;
+    }
 
-      header {
-        padding: 20px; /* Decrease the padding for mobile devices */
-      }
+    h2 {
+      margin-top: 20px;
+      font-size: 24px;
+    }
 
-      .header-logo {
-        max-width: 150px; /* Decrease the logo size for mobile devices */
-        float: none; /* Remove the float on mobile devices */
-        margin: 0 auto; /* Center the logo horizontally */
-      }
+    p {
+      margin-top: 10px;
+      font-size: 16px;
+    }
 
-      .contact-info {
-        margin-top: 10px; /* Reset the margin-top for mobile devices */
-      }
+    .get-quote-button {
+      display: inline-block;
+      padding: 10px 20px;
+      margin-top: 20px;
+      background-color: #555;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+    }
 
-      .contact-button {
-        display: block; /* Change the display to block for mobile devices */
-        margin-top: 10px; /* Add margin-top to create space between the contact info and button */
-      }
-
-      .header-social-icons {
-        position: static; /* Remove the absolute positioning */
-        margin-top: 20px; /* Increase the margin-top for mobile devices */
-        text-align: center; /* Center the icons horizontally */
-      }
-
-      .header-social-icons a {
-        display: inline-block; /* Change the display to inline-block for mobile devices */
-        margin: 10px; /* Add margin between the icons on mobile devices */
-      }
+    .agency-description {
+      margin-top: 20px;
+      font-size: 16px;
     }
 
     .products-container {
@@ -143,43 +130,78 @@
       margin-top: 10px;
       font-size: 16px;
     }
+
+    footer {
+      background-color: black; /* Updated background color */
+      padding: 20px;
+      text-align: center;
+    }
+
+    .footer-text {
+      font-size: 14px;
+      color: #fff; /* Added text color */
+    }
+
+    @media (max-width: 768px) {
+      .contact-info {
+        font-size: 14px;
+      }
+
+      .agency-title {
+        font-size: 24px;
+      }
+
+      .get-quote-button {
+        margin-top: 10px;
+      }
+
+      .agency-description {
+        font-size: 14px;
+      }
+
+      .products-container {
+        flex-direction: column;
+      }
+
+      .product {
+        flex-basis: 100%;
+      }
+    }
   </style>
 </head>
 <body>
   <header>
     <div class="container">
-      <img src="ACF6B9CA-A8AD-4CA9-862C-F7FB4F5613E4 (1).png" alt="Nation Insurance" class="header-logo">
-      <h1>Nation Insurance</h1>
+      <img src="logo.png" alt="Nation Insurance" class="header-logo">
+      <h1>AN AGENCY YOU CAN TRUST</h1>
       <div class="contact-info">
-        We have agents that speak English and Spanish at +1 954 2634450<br>
-        <a href="mailto:joswell.v@gmail.com" class="contact-button">Contact</a>
+        <i class="fas fa-map-marker-alt"></i> 123 Main Street, City, State, Zip
+        <br>
+        <i class="fas fa-phone-alt"></i> 123-456-7890
+        <br>
+        <i class="fas fa-envelope"></i> info@nationinsurance.com
+        <br>
+        <a href="contact.html" class="contact-button">Contact Us</a>
       </div>
       <div class="header-social-icons">
-        <a href="https://www.facebook.com/your-facebook-page" target="_blank"><i class="fab fa-facebook"></i></a>
-        <a href="https://www.instagram.com/your-instagram-page" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
       </div>
-      <h2 class="agency-title">AN AGENCY YOU CAN TRUST</h2>
     </div>
   </header>
   <main>
     <div class="container">
-      <img src="pexels-cdc-3993239.jpg" alt="Main Image" class="header-image">
-      
-      <h2 style="text-align: center;">We're here to help you protect your assets</h2>
-
-       <div style="text-align: center;">
-  <h2>We're here to help you protect your assets</h2>
-  <p>At Nation Insurance, we understand that your insurance needs are unique. That's why we offer a wide range of policies to fit your individual needs. Whether you're looking for home insurance, auto insurance, or business insurance, we have the coverage you need to protect your assets.</p>
-  <p>We also offer a variety of discounts to help you save money on your insurance premiums. So if you're looking for a reliable and affordable insurance company, look no further than Nation Insurance.</p>
-</div>
-     <div style="text-align: center;">
-  <a href="mailto:your-email@example.com" class="get-quote-button">Get a Quote</a>
-  <div class="agency-description">
-    <p>Our insurance agency is here to help you and your business.</p>
-  </div>
-</div>
-
-<h2 style="text-align: center;">Our Products</h2>
+      <h2>Welcome to Nation Insurance</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum lacinia dapibus dapibus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Quisque dignissim rhoncus mauris ac posuere.</p>
+      <a href="#" class="get-quote-button">Get a Quote</a>
+      <h2>About Our Agency</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum lacinia dapibus dapibus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Quisque dignissim rhoncus mauris ac posuere.</p>
+      <div class="agency-description">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum lacinia dapibus dapibus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Quisque dignissim rhoncus mauris ac posuere.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum lacinia dapibus dapibus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Quisque dignissim rhoncus mauris ac posuere.</p>
+      </div>
+      <h2>Our Products</h2>
       <div class="products-container">
         <div class="product">
           <img src="product1.jpg" alt="Product 1" class="product-image">
@@ -197,47 +219,13 @@
           <img src="product4.jpg" alt="Product 4" class="product-image">
           <h3 class="product-title">Product 4</h3>
         </div>
-        <div class="product">
-          <img src="product5.jpg" alt="Product 5" class="product-image">
-          <h3 class="product-title">Product 5</h3>
-        </div>
-        <div class="product">
-          <img src="product6.jpg" alt="Product 6" class="product-image">
-          <h3 class="product-title">Product 6</h3>
-        </div>
-        <div class="product">
-          <img src="product7.jpg" alt="Product 7" class="product-image">
-          <h3 class="product-title">Product 7</h3>
-        </div>
-        <div class="product">
-          <img src="product8.jpg" alt="Product 8" class="product-image">
-          <h3 class="product-title">Product 8</h3>
-        </div>
-        <div class="product">
-          <img src="product9.jpg" alt="Product 9" class="product-image">
-          <h3 class="product-title">Product 9</h3>
-        </div>
-        <div class="product">
-          <img src="product10.jpg" alt="Product 10" class="product-image">
-          <h3 class="product-title">Product 10</h3>
-        </div>
-        <div class="product">
-          <img src="product11.jpg" alt="Product 11" class="product-image">
-          <h3 class="product-title">Product 11</h3>
-        </div>
-        <div class="product">
-          <img src="product12.jpg" alt="Product 12" class="product-image">
-          <h3 class="product-title">Product 12</h3>
-        </div>
       </div>
     </div>
   </main>
   <footer>
     <div class="container">
-      <p class="footer-text">&copy; 2023 Atlantica Insurance</p>
-      <p class="footer-text">We have agents that speak English and Spanish at +1 954 2634450</p>
+      <p class="footer-text">&copy; 2023 Nation Insurance. All rights reserved.</p>
     </div>
   </footer>
 </body>
 </html>
-
