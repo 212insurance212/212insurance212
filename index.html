@@ -10,21 +10,21 @@
     header {
       background-color: black;
       color: white;
-      padding: 30px 20px; /* Increase the padding to increase the black area */
-      margin-bottom: 20px; /* Increase the margin-bottom to extend the black area down the page */
-      text-align: center; /* Center the content */
-      position: relative; /* Add relative positioning to the header */
+      padding: 30px 20px;
+      margin-bottom: 20px;
+      text-align: center;
+      position: relative;
     }
 
     .contact-info {
-      margin-top: 10px; /* Add margin-top to create space between contact info and logo */
+      margin-top: 10px;
       font-weight: bold;
     }
 
     .contact-button {
       background-color: white;
       color: black;
-      padding: 8px 16px; /* Decrease the padding to decrease the button width */
+      padding: 8px 16px;
       font-weight: bold;
       text-decoration: none;
       display: inline-block;
@@ -43,9 +43,9 @@
     }
 
     .header-logo {
-      max-width: 200px; /* Adjust the width as needed */
+      max-width: 200px;
       height: auto;
-      float: left; /* Move the logo to the left */
+      float: left;
     }
 
     .header-image {
@@ -54,16 +54,17 @@
     }
 
     .header-social-icons {
-      position: absolute;
-      top: 50%; /* Position the icons vertically centered */
-      right: 20px; /* Adjust the distance from the right side */
-      transform: translateY(-50%); /* Center the icons vertically */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
     }
 
     .header-social-icons a {
-      color: white;
+      display: inline-block;
+      margin: 0 10px;
       font-size: 20px;
-      margin-left: 10px; /* Add space between the icons */
+      color: white;
     }
 
     footer {
@@ -88,36 +89,34 @@
     /* Responsive Styles */
 
     @media screen and (max-width: 600px) {
-      /* Adjust styles for mobile devices */
-
       header {
-        padding: 20px; /* Decrease the padding for mobile devices */
+        padding: 20px;
       }
 
       .header-logo {
-        max-width: 150px; /* Decrease the logo size for mobile devices */
-        float: none; /* Remove the float on mobile devices */
-        margin: 0 auto; /* Center the logo horizontally */
+        max-width: 150px;
+        float: none;
+        margin: 0 auto;
       }
 
       .contact-info {
-        margin-top: 10px; /* Reset the margin-top for mobile devices */
+        margin-top: 10px;
       }
 
       .contact-button {
-        display: block; /* Change the display to block for mobile devices */
-        margin-top: 10px; /* Add margin-top to create space between the contact info and button */
+        display: block;
+        margin-top: 10px;
       }
 
       .header-social-icons {
-        position: static; /* Remove the absolute positioning */
-        margin-top: 20px; /* Increase the margin-top for mobile devices */
-        text-align: center; /* Center the icons horizontally */
+        position: static;
+        margin-top: 20px;
+        text-align: center;
       }
 
       .header-social-icons a {
-        display: inline-block; /* Change the display to inline-block for mobile devices */
-        margin: 10px; /* Add margin between the icons on mobile devices */
+        display: inline-block;
+        margin: 10px;
       }
     }
 
@@ -167,19 +166,20 @@
       
       <h2 style="text-align: center;">We're here to help you protect your assets</h2>
 
-       <div style="text-align: center;">
-  <h2>We're here to help you protect your assets</h2>
-  <p>At Nation Insurance, we understand that your insurance needs are unique. That's why we offer a wide range of policies to fit your individual needs. Whether you're looking for home insurance, auto insurance, or business insurance, we have the coverage you need to protect your assets.</p>
-  <p>We also offer a variety of discounts to help you save money on your insurance premiums. So if you're looking for a reliable and affordable insurance company, look no further than Nation Insurance.</p>
-</div>
-     <div style="text-align: center;">
-  <a href="mailto:your-email@example.com" class="get-quote-button">Get a Quote</a>
-  <div class="agency-description">
-    <p>Our insurance agency is here to help you and your business.</p>
-  </div>
-</div>
+      <div style="text-align: center;">
+        <h2>We're here to help you protect your assets</h2>
+        <p>At Nation Insurance, we understand that your insurance needs are unique. That's why we offer a wide range of policies to fit your individual needs. Whether you're looking for home insurance, auto insurance, or business insurance, we have the coverage you need to protect your assets.</p>
+        <p>We also offer a variety of discounts to help you save money on your insurance premiums. So if you're looking for a reliable and affordable insurance company, look no further than Nation Insurance.</p>
+      </div>
+     
+      <div style="text-align: center;">
+        <a href="mailto:your-email@example.com" class="get-quote-button">Get a Quote</a>
+        <div class="agency-description">
+          <p>Our insurance agency is here to help you and your business.</p>
+        </div>
+      </div>
 
-<h2 style="text-align: center;">Our Products</h2>
+      <h2 style="text-align: center;">Our Products</h2>
       <div class="products-container">
         <div class="product">
           <img src="product1.jpg" alt="Product 1" class="product-image">
@@ -213,32 +213,20 @@
           <img src="product8.jpg" alt="Product 8" class="product-image">
           <h3 class="product-title">Product 8</h3>
         </div>
-        <div class="product">
-          <img src="product9.jpg" alt="Product 9" class="product-image">
-          <h3 class="product-title">Product 9</h3>
-        </div>
-        <div class="product">
-          <img src="product10.jpg" alt="Product 10" class="product-image">
-          <h3 class="product-title">Product 10</h3>
-        </div>
-        <div class="product">
-          <img src="product11.jpg" alt="Product 11" class="product-image">
-          <h3 class="product-title">Product 11</h3>
-        </div>
-        <div class="product">
-          <img src="product12.jpg" alt="Product 12" class="product-image">
-          <h3 class="product-title">Product 12</h3>
-        </div>
       </div>
     </div>
   </main>
   <footer>
     <div class="container">
-      <p class="footer-text">&copy; 2023 Atlantica Insurance</p>
-      <p class="footer-text">We have agents that speak English and Spanish at +1 954 2634450</p>
+      <p class="footer-text">Nation Insurance &copy; 2023. All rights reserved.</p>
+      <p class="footer-text">1234 Main Street, Anytown, USA</p>
+      <p class="footer-text">Phone: +1 954 2634450 | Email: info@nationinsurance.com</p>
+      <div class="header-social-icons">
+        <a href="https://www.facebook.com/your-facebook-page" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com/your-instagram-page" target="_blank"><i class="fab fa-instagram"></i></a>
+      </div>
     </div>
   </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.2/js/all.min.js"></script>
 </body>
 </html>
-
-
